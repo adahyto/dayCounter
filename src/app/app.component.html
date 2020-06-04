@@ -1,4 +1,4 @@
-<p *ngIf="!dayPassedPercentage"></p>
+<p *ngIf="!dayPassedPercentage">Loading...</p>
 <main *ngIf="dayPassedPercentage">
     <label for="bar">Day passed:</label>
     <progress-bar
@@ -11,7 +11,7 @@
     <progress-bar
         id="bar"
         [progress]="dayLeftPercentage"
-        [color-degraded]="{ '0': '#fd8c8e', '51': '#f9c3d3', '75': '#00cbcb' }"
+        [color-degraded]="{ '0': '#fd8c8e', '25': '#f9c3d3', '50': '#00cbcb' }"
     >
     </progress-bar>
     <footer>
